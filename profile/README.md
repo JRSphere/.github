@@ -1,756 +1,198 @@
-# JRS OfficeTrack
+# JRSphere
 
-> A PHP/MySQL office and financial operations system built around real-world home-service business workflows by JRSphere.
+> **Learn by building. Build with purpose. Deliver with quality.**
 
-![Status](https://img.shields.io/badge/status-in%20development-orange)
-![PHP](https://img.shields.io/badge/PHP-Backend-777BB4)
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1)
-![Tailwind%20CSS](https://img.shields.io/badge/Tailwind%20CSS-Frontend-06B6D4)
-![License](https://img.shields.io/badge/license-not%20specified-lightgrey)
+JRSphere is a growing software and IT-focused organization centered on practical development, continuous learning, experimentation, and building useful software through real projects.
+
+[![GitHub](https://img.shields.io/badge/GitHub-JRSphere-181717?logo=github&logoColor=white)](https://github.com/JRSphere)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-JRSphere-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/company/jrsphere%E2%84%A2/)
 
 ---
 
-## Overview
+## About
 
-**JRS OfficeTrack** is a login-protected web application developed by **JRSphere** to manage core operational and financial activities for a home-service business workflow.
+JRSphere is building its engineering capability through hands-on software development.
 
-The application brings together:
+Our public work currently centers on practical business software, with an emphasis on:
 
-- Daily job management
-- Worker records
-- Commission and payment calculations
-- Business account balance tracking
-- Manual financial transactions
-- Date- and month-based financial reporting
-- Administrative account management
+- Learning through implementation
+- Turning real requirements into working software
+- Iterating on real project constraints
+- Improving engineering quality over time
+- Using GitHub to document and develop our work
 
-The project represents an early real-world software delivery effort from JRSphere and is being developed with a practical engineering mindset: build useful software, learn from implementation, and improve the system through iteration.
+We are still at an early stage. Rather than presenting ourselves as a large established technology company, we focus on building strong foundations through real projects and disciplined improvement.
+
+---
+
+## What We Build
+
+Our current public work demonstrates a focus on practical software for real operational needs.
+
+Today, that is represented by:
+
+- **Business web applications**
+- **Internal operational tooling**
+- **Financial and workflow management software**
+- **Practical software experiments and engineering learning**
+
+As the organization grows, additional project areas may be added based on actual development work rather than a predefined technology checklist.
+
+---
+
+## Featured Project
+
+### [JRS OfficeTrack](https://github.com/JRSphere/Office_Tack)
+
+> A PHP/MySQL office and financial operations system built around real-world home-service business workflows.
+
+[![Status](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/JRSphere/Office_Tack)
+[![PHP](https://img.shields.io/badge/PHP-backend-777BB4?logo=php&logoColor=white)](https://github.com/JRSphere/Office_Tack)
+[![MySQL](https://img.shields.io/badge/MySQL%20%2F%20MariaDB-database-4479A1?logo=mysql&logoColor=white)](https://github.com/JRSphere/Office_Tack)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-frontend-06B6D4?logo=tailwindcss&logoColor=white)](https://github.com/JRSphere/Office_Tack)
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue)](https://github.com/JRSphere/Office_Tack/blob/main/LICENSE)
+
+JRS OfficeTrack brings together job management, worker records, commission calculations, account and ledger operations, and date/month-based financial reporting.
+
+**Current state:** In development.
+
+The repository documents ongoing work around schema alignment, configuration management, validation, security hardening, testing, and other engineering improvements.
+
+---
+
+## Engineering Stack
+
+The technologies currently represented in JRSphere's public software repository include:
+
+| Area | Technologies |
+| --- | --- |
+| Backend | PHP |
+| Frontend | HTML, Tailwind CSS |
+| Database | MySQL / MariaDB |
+| Data Access | PDO |
+| Authentication | PHP sessions, password hashing and verification APIs |
+| Local Development | XAMPP |
+
+This list reflects technologies actually present in the current public project. It is not intended to represent every technology JRSphere may explore in the future.
+
+---
+
+## Engineering Approach
+
+We learn by building systems that have real requirements and real constraints.
+
+### Learn
+
+Build understanding through implementation rather than theory alone.
+
+### Build
+
+Turn requirements into working software and develop practical engineering experience.
+
+### Improve
+
+Use iteration to strengthen code quality, security, configuration, testing, and maintainability.
+
+### Deliver
+
+Aim for useful software that is clear, documented, and honest about its current limitations.
+
+Our working philosophy is simple:
 
 > **Learn by building. Build with purpose. Deliver with quality.**
 
 ---
 
-## Current Status
+## Development Status
 
-**Status: In Development**
+### Current Focus
 
-The core application workflow is implemented, including authentication, dashboard reporting, job entry, worker management, ledger operations, and financial reports.
+Our current public development focus is **JRS OfficeTrack**.
 
-The repository is still an early-stage codebase and should not be considered production-ready without further work on configuration management, schema consistency, security hardening, automated testing, deployment practices, and application-wide validation.
-
-### Implemented
-
-- [x] Session-based admin login/logout
-- [x] Dashboard with financial and operational metrics
-- [x] Job creation and deletion
-- [x] Automatic worker commission calculation
-- [x] Automatic business profit calculation
-- [x] Worker records and performance totals
-- [x] Main account balance tracking
-- [x] Manual credit/debit transactions
-- [x] Transaction filtering by date and month
-- [x] Financial reports by date and month
-- [x] Administrative profile/settings interface
-- [x] JRSphere project/about page
-- [x] MySQL/MariaDB database schema dump
+The project is an active early-stage software effort and continues to evolve through implementation and refinement.
 
 ### In Development
 
-- [ ] Align the application code with the included database schema
-- [ ] Complete profile, notification, and account-management integration
-- [ ] Clean up application navigation and incomplete routes
-- [ ] Improve validation, error handling, and security controls
-- [ ] Introduce automated testing
-- [ ] Improve environment and configuration management
+Current project-level improvement areas include:
 
-### Planned / Future Scope
+- Application and database schema alignment
+- Configuration and environment management
+- Validation and error handling
+- Security hardening
+- Automated testing
+- Navigation and incomplete-module cleanup
+- Documentation and deployment preparation
 
-- [ ] Invoice management
-- [ ] People/customer management
-- [ ] Inventory management
-- [ ] More comprehensive reporting and analytics
-- [ ] Production deployment documentation
-- [ ] CI/CD automation
-- [ ] Dedicated API layer, if required by future product direction
+### Future Direction
 
----
+JRSphere aims to continue growing through practical software projects, broader engineering experience, and stronger development practices.
 
-## Key Features
-
-### Admin Authentication
-
-The application uses PHP sessions for authenticated access.
-
-- Login with username and password
-- Password verification using PHP's password hashing APIs
-- Protected application pages
-- Logout support
-
-### Dashboard
-
-The dashboard provides a high-level operational view of the application.
-
-It currently includes:
-
-- Main account balance
-- Today's income
-- Today's worker expenses
-- Today's net result
-- Total worker count
-- Total people count
-- Recent jobs
-
-### Job Management
-
-The job-entry workflow supports:
-
-- Service selection
-- Client name
-- Worker assignment
-- Total payment
-- Commission percentage
-- Job date
-- Automatic worker-pay calculation
-- Automatic business-profit calculation
-- Recent job listing
-- Job deletion with balance/stat reversal
-
-Supported service categories currently include:
-
-- AC Service
-- Gas Service
-- Cleaning
-- Plumbing
-- Electrical
-- Other
-
-### Worker Management
-
-The worker module provides:
-
-- Worker records
-- Service specialization
-- Total jobs completed
-- Total amount paid
-- Worker deletion
-- Worker statistics
-
-### Financial Ledger
-
-The ledger supports:
-
-- Current account balance
-- Credit transactions
-- Debit transactions
-- Manual transaction entry
-- Transaction descriptions
-- Transaction dates
-- Date filtering
-- Month filtering
-- Transaction deletion with balance reversal
-- Balance reset
-- Transaction-history clearing
-
-### Financial Reports
-
-Reports can be generated by:
-
-- Specific date
-- Specific month
-
-Report data includes:
-
-- Total income
-- Worker expenses
-- Net result
-- Related job records
-- Client and worker information
-- Payment, worker-pay, and business-profit values
-
-### Administrative Settings
-
-The settings interface currently contains functionality for:
-
-- Profile information
-- Email
-- Account status
-- Profile picture upload
-- Password change
-- Password reset flow
-
-Some of these settings depend on database fields/tables that are not currently present in the included SQL dump and therefore require schema alignment before they can be considered fully operational.
+Long-term directions will be represented as they become actual projects rather than being presented as completed capabilities.
 
 ---
 
-## Technology Stack
+## How We Work
 
-| Layer | Technology |
-|---|---|
-| Backend | PHP |
-| Database | MySQL / MariaDB |
-| Frontend | HTML, Tailwind CSS |
-| Authentication | PHP Sessions + `password_hash()` / `password_verify()` |
-| Database Access | PDO |
-| Local Development | XAMPP |
-| Database Management | phpMyAdmin / MySQL-compatible tools |
+Our current public GitHub footprint is intentionally small, and we do not claim a fully formalized organization-wide engineering process yet.
 
-### Repository Notes
+At the repository level, we work around:
 
-The current repository does **not** contain:
+- Practical requirements
+- Incremental implementation
+- Documentation
+- Issue and Pull Request based collaboration
+- Local validation before changes are considered complete
 
-- `composer.json`
-- `package.json`
-- Node.js dependency management
-- PHPUnit configuration
-- Automated test suites
-- GitHub Actions workflows
-- Deployment configuration
-- Container configuration
-
-The frontend currently loads Tailwind CSS through the Tailwind CDN in the PHP templates, while a compiled/minified CSS file is also present in the repository.
+As JRSphere grows, we aim to strengthen our development process with clearer standards for testing, code review, automation, and release management.
 
 ---
 
-## Architecture
+## Open Source
 
-The current application follows a simple server-rendered PHP architecture.
+JRSphere does not label every public repository as open source by default.
 
-```mermaid
-flowchart LR
-    U[Administrator / Browser]
-    UI[PHP Pages + HTML + Tailwind CSS]
-    AUTH[Session Authentication]
-    APP[PHP Application Logic]
-    PDO[PDO]
-    DB[(MySQL / MariaDB)]
+The current public software project, **JRS OfficeTrack**, is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
 
-    U --> UI
-    UI --> AUTH
-    UI --> APP
-    APP --> PDO
-    PDO --> DB
-Architecture Characteristics
-Server-rendered PHP pages
-Shared PHP include files for navigation and database access
-PDO-based database queries
-Session-based authentication
-MySQL/MariaDB persistence
-Client-side calculation preview using JavaScript
-Tailwind-based UI styling
+Repository-specific licensing and contribution terms should always be checked in the individual repository before reuse or redistribution.
 
-The project does not currently expose a separate REST API layer.
+---
 
-Project Structure
-Office_Tack/
-├── assets/
-│   ├── jrs.png
-│   └── tailwind.min.css
-│
-├── includes/
-│   ├── db.php
-│   ├── header.php
-│   ├── navbar.php
-│   └── sidebar.php
-│
-├── about.php
-├── add_worker.php
-├── dashboard.php
-├── index.php
-├── job_entry.php
-├── ledger.php
-├── login.php
-├── logout.php
-├── mark_read.php
-├── reports.php
-├── settings.php
-├── workers.php
-│
-├── jrs_officetrack.sql
-├── tailwind.min.css
-├── .gitignore
-└── README.md
-Important Components
-File / Directory	Purpose
-login.php	Admin authentication
-dashboard.php	Dashboard and operational summary
-job_entry.php	Job creation, calculation, and deletion
-workers.php	Worker records and statistics
-ledger.php	Account balance and transaction management
-reports.php	Date/month financial reports
-settings.php	Admin profile and password management
-about.php	JRSphere information page
-includes/db.php	PDO database connection
-includes/navbar.php	Shared application navbar and notifications UI
-includes/sidebar.php	Main application navigation
-jrs_officetrack.sql	Database schema and seed data
-Database
+## Contributing
 
-The included SQL dump defines the following core tables:
+Contribution opportunities may vary by repository.
 
-admin
-account
-workers
-jobs
-transactions
-Database Relationship
-erDiagram
-    WORKERS ||--o{ JOBS : assigned_to
+For JRS OfficeTrack, the repository is public and provides GitHub Issues and Pull Requests for project-level discussion and development.
 
-    ADMIN {
-        int id PK
-        varchar username
-        varchar password
-        timestamp created_at
-    }
+Before contributing, please review the target repository's documentation and current project state. The project is still evolving, so implementation details and development practices may change as the codebase matures.
 
-    ACCOUNT {
-        int id PK
-        decimal balance
-        timestamp updated_at
-    }
+[Open JRS OfficeTrack](https://github.com/JRSphere/Office_Tack)
 
-    WORKERS {
-        int id PK
-        varchar worker_name
-        varchar service_type
-        int total_jobs
-        decimal total_paid
-        timestamp created_at
-    }
+---
 
-    JOBS {
-        int id PK
-        varchar service_type
-        varchar client_name
-        int worker_id FK
-        decimal total_payment
-        decimal commission_percent
-        decimal worker_pay
-        decimal business_profit
-        date job_date
-        timestamp created_at
-    }
+## Explore JRSphere
 
-    TRANSACTIONS {
-        int id PK
-        enum type
-        decimal amount
-        varchar description
-        date transaction_date
-        timestamp created_at
-    }
-Job Calculation Model
+| Resource | Link |
+| --- | --- |
+| GitHub Organization | [github.com/JRSphere](https://github.com/JRSphere) |
+| JRS OfficeTrack | [JRSphere/Office_Tack](https://github.com/JRSphere/Office_Tack) |
+| Organization Profile Repository | [JRSphere/.github](https://github.com/JRSphere/.github) |
+| LinkedIn | [JRSphere on LinkedIn](https://www.linkedin.com/company/jrsphere%E2%84%A2/) |
 
-The application calculates worker payment from the configured commission percentage:
+---
 
-worker_pay = total_payment × commission_percent / 100
+## Our Direction
 
-business_profit = total_payment - worker_pay
+JRSphere is being built around a simple idea:
 
-When a job is added, the application updates:
+**Learn continuously. Build practically. Improve deliberately.**
 
-The jobs table
-The main account balance
-The transactions ledger
-The selected worker's job/payment totals
+We are developing our skills and software capabilities through real projects, honest iteration, and increasingly disciplined engineering practices.
 
-When a job is removed, the application attempts to reverse the corresponding balance and worker statistics.
+The code in this organization is part of that journey.
 
-Database Setup
+---
 
-The application expects a database named:
-
-jrs_officetrack
-
-The database connection is configured in:
-
-includes/db.php
-
-For a local XAMPP installation, the expected environment is approximately:
-
-PHP
-Apache
-MySQL / MariaDB
-phpMyAdmin
-Import the Database
-
-Using phpMyAdmin:
-
-Start Apache and MySQL in XAMPP.
-Create a database named:
-jrs_officetrack
-Import:
-jrs_officetrack.sql
-Verify that the tables are created successfully.
-Important
-
-The current repository contains application code that references additional database fields/tables not defined in the included SQL dump. See Known Implementation Notes before using the application outside a development environment.
-
-Getting Started
-Prerequisites
-
-Install:
-
-XAMPP or an equivalent PHP/Apache/MySQL environment
-PHP compatible with the repository
-MySQL or MariaDB
-A modern web browser
-
-The included SQL dump was generated from a MariaDB environment using PHP 8.2 tooling.
-
-Clone the Repository
-git clone https://github.com/JRSphere/Office_Tack.git
-cd Office_Tack
-Local Server Setup
-
-For XAMPP, place the repository inside the Apache document root, for example:
-
-xampp/
-└── htdocs/
-    └── Office_Tack/
-
-Then:
-
-Start Apache.
-Start MySQL.
-Create/import the jrs_officetrack database.
-Review includes/db.php.
-Open the application in your browser.
-
-Example:
-
-http://localhost/Office_Tack/
-
-The root index.php redirects visitors to:
-
-login.php
-Configuration
-
-Database settings are currently defined directly inside:
-
-includes/db.php
-
-Current development configuration follows this structure:
-
-$host     = 'localhost';
-$dbname   = 'jrs_officetrack';
-$username = 'root';
-$password = '';
-Recommended Production Direction
-
-Before production deployment, configuration should be moved away from application source code.
-
-Recommended improvements:
-
-Environment variables
-Environment-specific configuration
-Secret management
-Separate development and production credentials
-Removal of credentials/configuration from version-controlled application code
-
-Do not commit production credentials, API keys, passwords, or other secrets to Git.
-
-Authentication & Authorization
-
-The current application uses session-based authentication.
-
-Protected pages check for an authenticated administrator session before allowing access.
-
-Examples include:
-
-if (!isset($_SESSION['admin'])) {
-    header("Location: login.php");
-    exit();
-}
-
-Passwords are verified using PHP's password APIs:
-
-password_verify()
-
-New passwords are stored using:
-
-password_hash()
-Current Authorization Model
-
-The repository currently implements a single administrator-oriented access model.
-
-It does not currently demonstrate:
-
-Multiple application roles
-Granular permissions
-Role-based access control
-OAuth/OpenID authentication
-API token authentication
-Multi-factor authentication
-Testing
-
-There is currently no automated test suite in the repository.
-
-The repository does not contain evidence of:
-
-PHPUnit
-Integration tests
-End-to-end tests
-Browser automation
-CI-based test execution
-Automated coverage reporting
-Recommended Testing Direction
-
-As the project grows, testing should be introduced around:
-
-Authentication flows
-Job calculations
-Ledger balance changes
-Transaction reversal
-Worker statistics
-Report calculations
-Input validation
-Database operations
-Code Quality & Engineering Practices
-
-The project currently uses:
-
-PDO for database access
-Prepared SQL statements for many user-supplied values
-PHP session authentication
-Server-side input validation in several workflows
-Tailwind CSS for UI styling
-Shared navigation components
-
-The repository does not currently define:
-
-PHP linting configuration
-Composer dependency management
-Automated formatting
-Static analysis
-Automated test execution
-CI/CD pipelines
-Formal branch protection configuration
-Formal commit convention
-Development Workflow
-
-There is no formal GitHub Actions or branch workflow configuration in the current repository.
-
-For continued collaborative development, the following workflow is recommended:
-
-Issue / Requirement
-        ↓
-Feature Branch
-        ↓
-Implementation
-        ↓
-Local Testing
-        ↓
-Pull Request
-        ↓
-Code Review
-        ↓
-Merge
-
-Suggested branch naming:
-
-feature/...
-fix/...
-docs/...
-refactor/...
-security/...
-
-Examples:
-
-feature/invoice-module
-fix/ledger-balance
-docs/update-readme
-refactor/database-layer
-security/session-hardening
-Contributing
-
-JRS OfficeTrack is maintained as a JRSphere engineering project.
-
-For future collaborative development:
-
-Create or select an issue describing the change.
-Create a focused branch.
-Make the required changes.
-Test the affected workflow locally.
-Review database changes carefully.
-Commit the changes with a clear message.
-Push the branch.
-Open a Pull Request.
-Address review feedback.
-Merge only after the implementation is verified.
-
-When modifying financial functionality, changes should be reviewed carefully because ledger and account operations affect stored business data.
-
-Commit Convention
-
-The repository currently contains an initial commit but does not establish a formal commit-message convention.
-
-A consistent convention is recommended for future development:
-
-feat: add invoice module
-fix: correct worker balance reversal
-docs: improve installation guide
-refactor: simplify ledger queries
-test: add job calculation tests
-security: harden session handling
-chore: update project configuration
-
-This is a recommended convention, not an existing repository policy.
-
-Security
-
-Security should be treated as an ongoing engineering requirement, particularly because the application handles authentication and financial information.
-
-Current Recommendations
-Never commit production credentials or secrets.
-Move database configuration to environment variables.
-Review all authentication and password-reset logic before deployment.
-Add CSRF protection to state-changing forms.
-Validate and sanitize uploaded files more defensively.
-Add authorization checks consistently across all management actions.
-Keep PHP and database software patched.
-Review SQL operations and error handling before production use.
-Add rate limiting or lockout controls for authentication where appropriate.
-Introduce dependency and security scanning when a package-management workflow is added.
-Production Readiness
-
-The current repository should be treated as a development-stage application until configuration management, schema alignment, testing, and security hardening have been completed.
-
-Known Implementation Notes
-
-The repository currently contains several areas where application code and repository structure are not fully aligned.
-
-Database / Application Mismatch
-
-The included SQL dump defines a relatively small schema, while parts of the PHP application reference additional fields and tables.
-
-Examples include:
-
-settings.php references admin fields such as profile information and status that are not present in the included admin table definition.
-navbar.php and mark_read.php reference a notifications table that is not present in the SQL dump.
-dashboard.php queries a people table that is not present in the included schema.
-Some application logic assumes an admin record with id = 1, while the supplied SQL seed data uses a different admin ID.
-
-These should be reconciled before relying on those workflows in a fresh installation.
-
-Navigation / Incomplete Modules
-
-The shared sidebar contains links for:
-
-invoices.php
-people.php
-inventory.php
-
-Those files are not currently present in the repository.
-
-They should therefore be treated as planned/incomplete modules, not as currently implemented application features.
-
-Configuration
-
-includes/db.php is present in the repository and contains local database configuration. Although it is listed in .gitignore, the file is already tracked in Git.
-
-Before production deployment, configuration handling should be redesigned.
-
-Roadmap
-Completed
-Admin authentication
-Dashboard
-Job entry workflow
-Automatic commission calculation
-Business-profit calculation
-Worker management
-Account ledger
-Manual transactions
-Date/month financial reporting
-JRSphere about page
-In Progress
-Schema/application alignment
-Settings integration
-Notification integration
-Navigation cleanup
-Security hardening
-Configuration improvements
-Planned
-Invoice management
-People/customer management
-Inventory management
-Automated testing
-CI/CD
-Improved reporting
-Production deployment documentation
-Future
-API layer
-More modular application architecture
-Improved observability
-Expanded business workflows
-Production-grade deployment and infrastructure
-License
-
-License: Not currently specified.
-
-No open-source license is currently defined in the repository.
-
-Until a license is added, users should not assume that the source code may be freely reused, modified, or redistributed.
-
-About JRSphere
-
-JRSphere is an emerging software and IT-focused organization built around practical engineering, continuous learning, experimentation, and real-world software development.
-
-JRSphere's working philosophy is:
-
-Learn by building. Build with purpose. Deliver with quality.
-
-This repository is part of that engineering journey and demonstrates an early implementation of a practical business management system.
-
-Maintainers
-
-Built and maintained by:
-
-JRSphere
-
-The project is developed collaboratively by the JRSphere team.
-
-Contact
-JRSphere
-
-GitHub Organization:
-
-https://github.com/JRSphere
-
-Project Repository:
-
-https://github.com/JRSphere/Office_Tack
-
-For project-related issues, technical discussions, and proposed improvements, use the repository's GitHub Issues and Pull Requests.
-
-Repository Snapshot
-Area	Current State
-Project Type	Server-rendered business web application
-Backend	PHP
-Database	MySQL / MariaDB
-Frontend	HTML + Tailwind CSS
-Authentication	PHP session-based admin login
-API	No separate API layer
-Automated Tests	Not currently implemented
-CI/CD	Not currently implemented
-Package Manager	None configured
-License	Not specified
-Deployment Configuration	Not included
-Development Status	In Development
-JRSphere Engineering Philosophy
-
-This project is more than a collection of PHP pages. It is part of JRSphere's practical approach to software engineering:
-
-Learn
-  ↓
-Build
-  ↓
-Test
-  ↓
-Improve
-  ↓
-Deliver
-
-The goal is to turn real requirements into maintainable software while continuously improving engineering quality, reliability, security, and development practices.
-
-<p align="center"> <strong>JRSphere</strong><br> <em>Learn by building. Build with purpose. Deliver with quality.</em> </p> ```
+<p align="center">
+  <strong>JRSphere</strong><br>
+  <em>Learn by building. Build with purpose. Deliver with quality.</em>
+</p>
